@@ -65,7 +65,7 @@ dependencies:
   # Utilities
   intl: ^0.20.0
   logger: ^2.4.0
-  path_provider: ^2.1.4
+  path_provider: ^2.0.15
   url_launcher: '>=6.1.14 <6.2.1'
   connectivity_plus: ^5.0.2
 
