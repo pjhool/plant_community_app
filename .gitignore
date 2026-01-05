@@ -43,3 +43,24 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Firebase configuration files (보안)
+# Uncomment if you want to exclude Firebase config files
+# /android/app/google-services.json
+# /ios/Runner/GoogleService-Info.plist
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE specific files
+.vscode/
+*.code-workspace
+
+# Generated files
+*.g.dart
+*.freezed.dart
+*.config.dart
+
+cursor_history.md 
