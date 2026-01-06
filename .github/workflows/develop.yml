@@ -39,7 +39,7 @@ jobs:
           flutter doctor -v
       
       - name: Cache Pub dependencies
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: |
             ~/.pub-cache
@@ -65,7 +65,7 @@ jobs:
         run: flutter test --coverage
       
       - name: Upload coverage
-        uses: codecov/codecov-action@v3
+        uses: codecov/codecov-action@v5
         if: success()
         with:
           file: ./coverage/lcov.info
@@ -78,7 +78,7 @@ jobs:
       
       - name: Upload APK artifacts
         if: success()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: android-apks
           path: build/app/outputs/flutter-apk/
